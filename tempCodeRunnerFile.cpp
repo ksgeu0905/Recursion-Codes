@@ -1,0 +1,1 @@
+ans+=str[ind]; 
