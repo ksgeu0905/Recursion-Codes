@@ -7,10 +7,10 @@ void func_string(string str,int ind,string& ans,int n){
         cout<<ans<<endl;
         return;
     }
-    // ans+=str[ind]; // to take the element 
-    // func_string(str,ind+1,ans,n);
-    ans+=to_string(int(str[ind]));
+    ans+=str[ind];                     // to take the element 
     func_string(str,ind+1,ans,n);
+    // ans+=to_string(int(str[ind]));
+    // func_string(str,ind+1,ans,n);
     ans.erase(ans.length()-1);         // to remove the element
     func_string(str,ind+1,ans,n);
 }
